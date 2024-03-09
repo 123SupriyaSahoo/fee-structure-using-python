@@ -1,0 +1,41 @@
+def calculate_total_fee(course):
+    if course == "C":
+        course_fee = 1250
+        hostel_fee = 2549
+        library_fee = 150
+        exam_fee = 2998
+        total_fee = course_fee + hostel_fee + library_fee + exam_fee
+        print("Total fee for C(6 month) course is: ", total_fee)
+    elif course == "ML":
+        course_fee = 999
+        hostel_fee = 2549
+        library_fee = 142
+        exam_fee = 3540
+        total_fee = course_fee + hostel_fee + library_fee + exam_fee
+        print("Total fee for ML(12 month) course is:", total_fee)
+    elif course == "AI":
+        course_fee = 898
+        hostel_fee = 2549
+        library_fee = 139
+        exam_fee = 4980
+        total_fee = course_fee + hostel_fee + library_fee + exam_fee
+        print("Total fee for AI(18 month) course is: ", total_fee)
+    elif course == "ETHICAL HACKING":
+        course_fee = 859
+        hostel_fee = 2549
+        library_fee = 132
+        exam_fee = 5290
+        total_fee = course_fee + hostel_fee + library_fee + exam_fee
+        print("Total fee for ETHICAL HACKING(24 month) course is: ", total_fee)
+    elif course == "ROBOTICS":
+        course_fee = 843
+        hostel_fee = 2549
+        library_fee = 128
+        exam_fee = 5949
+        total_fee = course_fee + hostel_fee + library_fee + exam_fee
+        print("Total fee for ROBOTICS(30 month) course is: ", total_fee)
+    else:
+        print("Invalid course selected.")
+
+course = input("Enter the course (C, ML, AI, ETHICAL HACKING, ROBOTICS): ")
+calculate_total_fee(course)
